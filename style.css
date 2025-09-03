@@ -1,0 +1,295 @@
+*{
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 0.938;
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
+  scroll-padding-top: 4rem;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --beige: #fbf8eb;
+  --grey: #2e2e2e;
+  --amber: #fcb900;
+}
+
+body{
+  background-color: var(--black);
+}
+
+
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: .6rem 4rem;
+  height: 12vh;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  border-bottom: 1px;
+}
+
+nav ul{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.4rem; 
+}
+
+nav li{
+  list-style: none;
+  display: flex;
+  
+}
+
+nav li a{
+  color: var(--white);
+  font-size: .9rem;
+  font-weight: 400;
+  text-decoration: none;
+  display: block;
+  background-color: var(--black);
+}
+
+nav a:hover{
+  opacity: 0.8;
+}
+
+.menu-button{
+  display: none;
+  cursor: pointer;
+}
+
+/*
+@media (max-width: 700px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+    border-bottom: 1px solid #DDDDDD;
+    transition: ease 2ms;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links li {
+    margin: 1px 0;
+  }
+
+  .nav-links li a{
+    padding: 1rem;
+    width: 100%;
+    display: block;
+    color: black;
+    text-decoration: none;
+  }
+
+  .nav-links li:hover{
+    cursor: pointer;
+  }
+
+  .nav-links li a:hover {
+    color: #333;
+  }
+
+  .menu-button {
+    display: block;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+*/
+
+/* main */
+main{
+  padding: 0rem 4rem;
+}
+
+h1,h2,h3,p,a{
+  font-weight: 300;
+  color: white;
+}
+
+h4{
+  color: var(--grey)
+}
+
+.hero{
+  padding: 0px 5em;
+}
+
+h1{
+  color: var(--grey);
+  font-size: 40px;
+}
+
+.hero h2{
+  margin-top: 40px;
+  text-align: left;
+  font-size: 70px;
+  letter-spacing: 2.33px;
+  color: white;
+ }
+
+.logo, .nav-links{
+  gap: 8px;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 2rem 0rem;
+ }
+
+h1{
+  padding-bottom: 2rem;
+}
+
+table{
+  text-align: left;
+}
+
+
+
+input,
+select,
+textarea {
+  border-bottom: 1px solid #F2F3F5;
+  border-radius: 3px;
+  box-shadow: inset 1px 1px 3px 0 rgba(189,191,192,0.10);
+  height: 35px;
+  margin-bottom: 15px;
+  padding: 10px;
+  transition: border-color 0.5s ease;
+  width: 100%;
+}
+
+a{
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--amber);
+  text-underline-offset: 10px;
+  text-decoration-thickness: 1px;
+}
+
+
+/*Home Page: intro text, brief overview of services*/
+.service{
+  display: flex;
+  gap: 20px;
+}
+
+.service div{
+  height: 70vh;
+}
+
+
+/*Service Page: table of services, contact form*/
+.table-container{
+  width: 100%;
+  overflow: scroll;
+}
+
+.table-container::-webkit-scrollbar{
+  display: none;
+}
+
+table{
+  width: 120%;
+  table-layout: fixed;
+}
+
+th, td {
+  width: 80%;
+  vertical-align: top;
+  text-align: left;
+  padding-bottom: 12px;
+  padding-right: 36px;
+  color: var(--white);
+}
+
+th{
+  font-size: 2em;
+}
+
+form{
+  text-align: left;
+}
+
+/*About Us Page: image, text about company, links to socials*/
+.about-main{
+  text-align: center;
+}
+
+.about-section{
+  height: 80vh;
+}
+
+.about-section p{
+  font-size: 48px;
+}
+
+.img-container {
+  /* width: */
+  /* height: */
+      overflow: hidden;
+	   
+}
+
+ .img-container img {
+      width: 100%;
+      height: 100%; 
+      object-fit: fill; 
+      object-position: center;
+    }
+    
+/*footer*/
+footer{
+  margin: 60px;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 40px;
+  border: 1px solid white;
+  height: 40vh;
+}
+
+footer a{
+  color: white;
+}
+
+
+.address{
+ color:  darkgrey;
+}
+
+.social-container{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-top: 24
+}
+
+
+@media (width <= 700px) {
+
+  .footer{
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
