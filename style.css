@@ -25,6 +25,7 @@ body{
 header{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: .6rem 4rem;
   height: 12vh;
   width: 100%;
@@ -180,7 +181,7 @@ textarea {
   width: 100%;
 }
 
-a{
+.btnLink{
   font-size: 1rem;
   font-weight: 300;
   color: var(--amber);
