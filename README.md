@@ -1,5 +1,5 @@
 # JTB Studios Adaptation
-Adapting JTB Studios' website (https://www.jtbstudios.com.au/) to meet the course requirements for ICT30120.
+Adapting JTB Studios' website (https://www.jtbstudios.com.au/) to meet the assignment requirements for ICT30120.
 
 You are tasked with building a simple website for a client. The website must consist of at least three web pages and should include the following elements:
 - Text Content: Include informative and relevant text as specified by the client.
