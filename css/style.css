@@ -73,10 +73,6 @@ nav li a{
   text-align: center;
 }
 
-a:link{
-  
-}
-
 a:hover{
   color: var(--grey);
 }
@@ -85,12 +81,10 @@ a:active{
   opacity: 0.8;
 }
 
-
 .menu-button{
   display: none;
   cursor: pointer;
 }
-
 
 @media (max-width: 700px) {
   .nav-links {
@@ -221,7 +215,6 @@ section{
   font-size: 24px;
   font-weight: 500;
   padding-bottom: 16px;
-
 }
 
 /*Service Page: table of services, contact form*/
@@ -280,6 +273,7 @@ input, select, textarea{
 input:focus, select:focus {
   outline: none;
 }
+
 option, select{
   color: grey;
 }
@@ -409,11 +403,10 @@ footer p{
     padding: 2em 0px 2em 0px;
   }
 
-  table td,
-table th {
+  table td, table th {
   word-wrap: break-word; /* Allows long words to break and wrap */
   white-space: normal; /* Ensures text wraps naturally */
-}
+  }
 
   form{
     width: auto;
